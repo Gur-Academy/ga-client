@@ -18,11 +18,19 @@ app.use(cors(corsOptions));
 app.options('*', cors(corsOptions));
 
 app.use(express.json());
+   
+// ✅ Import student routes
+const studentRoutes = require('./Routes/studentRoutes');
 
 // Routes
 app.get('/', (req, res) => {
   res.send('Welcome to Gur Academy Admin API');
 });
+  
+// ✅ Use student routes under /api/student
+app.use('/api/student', studentRoutes);
+
+
 
 
 // Export app for testing
