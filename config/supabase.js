@@ -1,4 +1,4 @@
-require('dotenv').config();
+const dotenv = require('dotenv');
 const { createClient } = require('@supabase/supabase-js');
 
 const supabase = createClient(
