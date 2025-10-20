@@ -4,7 +4,7 @@ const express = require('express');
 const router = express.Router();
 
 // Import the controller (business logic)
-const studentController = require('../controllers/studentController');
+const studentController = require('../controller/studentController');
 
 // ----------------------------------------------
 // @route   POST /api/student/createStudentProfile

@@ -22,7 +22,6 @@
   "homepage": "https://github.com/Gur-Academy/ga-client#readme",
   "description": "",
   "dependencies": {
-
     "@supabase/supabase-js": "^2.75.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
